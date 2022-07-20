@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,400italic,600,700,600italic,700italic);
+
+.pricingBody{
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.pricing-table {
+  display: table;
+  width: 100%;
+  direction: rtl;
+  
+}
+.pricing-table .pricing-option {
+  width: 30%;
+  background: rgb(39, 39, 39);
+  float: left;
+  border-radius: 5%;
+  padding: 2%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.pricing-table .pricing-option:nth-child(even) {
+  margin: 0 1%;
+}
+.pricing-table .pricing-option:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.04);
+}
+
+.pricing-table .pricing-option:hover i,
+.pricing-table .pricing-option:hover h1,
+.pricing-table .pricing-option:hover span,
+.pricing-table .pricing-option:hover b {
+  color: #FF4500;
+}
+
+.pricing-table .pricing-option:hover .back {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.pricing-table .pricing-option:hover .back a.button {
+  transform: translateY(0px) !important;
+}
+.pricing-table .pricing-option hr {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+}
+.pricing-table .pricing-option i {
+  font-size: 3rem;
+  color: #d8d8d8;
+  transition: all 0.3s ease-in-out;
+}
+.pricing-table .pricing-option h1 {
+  margin: 0px 0;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  height:60px;
+  line-height: 30px;
+}
+.pricing-table .pricing-option p {
+  color: rgb(197, 197, 197);
+  padding: 0 10px;
+  line-height: 1.3;
+  font-size: 16px;
+}
+.pricing-table .pricing-option div {
+  height:95px;
+}
+.pricing-table .pricing-option .price {
+  position: relative;
+}
+.pricing-table .pricing-option .price .back a.button {
+  background: #FF4500;
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 15px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  margin: auto;
+  text-transform: uppercase;
+  transform: scale(0.9,1);
+  transition: all 0.6s ease-in-out;
+  bottom: -30%;
+}
+
+@media screen and (max-width: 650px) {
+  .pricing-table .pricing-option {
+    padding: 5%;
+    width: 90%;
+  }
+  .pricing-table .pricing-option:nth-child(even) {
+    margin: 30px 0 !important;
+  }
+}
+
